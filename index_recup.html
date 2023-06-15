@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/stiles.css">
+    <title>Inventario</title>
+</head>
+<body>
+    <main class="container">
+        <div class="contenedor">
+            <div class="form">
+                <div class="form_sec">
+                   <h2 class="form_name">ContabilidadSinRebu</h2>
+                <div class="form_imput">
+                    <h2 class="form_title">Hola, <span>Usuario</span></h2>
+                    <p class="title_sec">Estas recuperando tu contraseña</p>
+                    <div class="group_imput">
+                        <input type="password" class="form_input" placeholder="Escribe la nueva contraseña">
+                        <input type="password" class="form_input" placeholder="Escribe repite la contraseña">
+                    </div>
+                    <div class="btn">                        
+                        <button class="btn_primary" id="update">Actualizar</button>
+                    </div>
+                </div> 
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById("update").addEventListener("click", function() {
+            update();
+        });
+        function  update() {
+        swal("Contraseña actualizada!", "Listo", "success");
+        //swal("Ufffs!", "Usuario no existe", "error");
+        //swal("Contraña incorrecta!", "Intente nuevamente", "info");
+    }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
